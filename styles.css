@@ -55,8 +55,8 @@ main {
 }
 
 .intro {
-    width: 500px;
-    height: 200px;
+    width: 550px;
+    height: 150px;
     background: linear-gradient(135deg, #4f4fff, #191970);
     color: white;
     font-size: 20px;
