@@ -121,7 +121,7 @@ main {
     right: 0;
     bottom: 0;
     background: rgba(255, 255, 255, 0.2); /* Üveghatás */
-    z-index: -1;
+    z-index: 0;
 }
 
 /* Box szöveg */
