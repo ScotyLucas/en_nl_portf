@@ -78,12 +78,13 @@ main {
 }
 
 /* Fehér vonal */
+/* Fehér vonal */
 .line {
     width: 2px;
     height: 200px;
     background-color: white;
     position: absolute;
-    top: 0;
+    top: 50px;
     left: 50%;
     transform: translateX(-50%); /* A vonal középre igazítása */
 }
@@ -93,55 +94,38 @@ main {
     position: relative;
     margin-top: 50px;
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 
-/* Téglalap alakú box, ami balról belelóg 40px-t */
+/* Téglalap alakú box középen */
 .box {
-    width: 250px;
-    height: 80px;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
+    width: 300px;
+    height: 150px;
+    background-color: rgba(25, 25, 112, 0.8); /* Szél szín */
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    cursor: pointer;
-    transition: transform 0.5s ease-in-out;
-    overflow: hidden;
-    margin-left: -40px; /* Bal oldalról 40px-t belelóg a vonalba */
+    backdrop-filter: blur(10px); /* Üveghatás */
 }
 
-/* Évszámok */
-.left .year {
+/* Üveghatású közép */
+.box::before {
+    content: "";
     position: absolute;
-    top: 50%;
-    right: -50px; /* Jobb oldalról */
-    transform: translateY(-50%);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.2); /* Üveghatás */
+    z-index: -1;
+}
+
+/* Box szöveg */
+.box-text {
     color: white;
     font-size: 24px;
-}
-
-/* Box tartalom */
-.box-content {
-    color: white;
-    font-size: 18px;
     text-align: center;
-    transition: opacity 0.5s;
 }
-
-/* Box szöveg elrejtése alaphelyzetben */
-.box .box-content p {
-    opacity: 0;
-}
-
-/* Ha a box elforog, akkor a szöveg megjelenik */
-.box.flip .box-content p {
-    opacity: 1;
-}
-
-/* Kattintásra történő forgatás */
-.box.flip {
-    transform: rotateY(180deg);
-}
-
