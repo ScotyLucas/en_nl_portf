@@ -78,31 +78,42 @@ main {
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
     position: relative;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column; /* Vertikális elrendezés */
+    align-items: center;
 }
 
+/* Két box */
 .box {
-    width: 300px; /* Téglalap alakú box */
+    width: 300px;
     height: 100px;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: relative;
     cursor: pointer;
-    transition: transform 0.5s;
+    transition: transform 0.5s ease-in-out;
     overflow: hidden;
 }
 
+.box1 {
+    margin-bottom: 20px; /* 20px távolság az első és második box között */
+    left: 10px; /* Jobb oldalról logjon a vonalra */
+}
+
+.box2 {
+    left: -10px; /* Bal oldalról logjon a vonalra */
+}
+
+/* Évszámok */
 .left .year {
     position: absolute;
     top: 50%;
-    right: -50px; /* Jobb oldalon legyen az évszám */
+    right: -50px; /* Jobb oldalról */
     transform: translateY(-50%);
     color: white;
     font-size: 24px;
@@ -111,12 +122,13 @@ main {
 .right .year {
     position: absolute;
     top: 50%;
-    left: -50px; /* Bal oldalon legyen az évszám */
+    left: -50px; /* Bal oldalról */
     transform: translateY(-50%);
     color: white;
     font-size: 24px;
 }
 
+/* Fehér vonal */
 .line {
     width: 2px;
     height: 200px;
@@ -127,7 +139,7 @@ main {
     transform: translateX(-50%); /* A vonal középre igazítása */
 }
 
-/* Box fordulás hatás */
+/* Box flip animáció */
 .box.flip {
     transform: rotateY(180deg);
 }
@@ -139,16 +151,13 @@ main {
     transition: opacity 0.5s;
 }
 
-/* Szöveg megjelenítése a box flip után */
-.box.flip .box-content {
+/* Box szöveg elrejtése alaphelyzetben */
+.box .box-content p {
+    opacity: 0;
+}
+
+/* Ha a box elforog, akkor a szöveg megjelenik */
+.box.flip .box-content p {
     opacity: 1;
 }
 
-.box-content p {
-    opacity: 0;
-}
-
-/* Ha nincs fordulás, akkor a szöveg rejtve van */
-.box .box-content {
-    opacity: 0;
-}
