@@ -78,7 +78,6 @@ main {
 }
 
 /* Fehér vonal */
-/* Fehér vonal */
 .line {
     width: 2px;
     height: 200px;
@@ -94,39 +93,62 @@ main {
     position: relative;
     margin-top: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; /* Balra igazítjuk a tartalmat */
+    padding-left: 50px; /* Bal oldali távolság a boxnak */
 }
 
-/* Téglalap alakú box középen */
+/* Téglalap alakú box középen, de 50px jobbra tolva */
 .box {
     width: 300px;
     height: 150px;
-    background-color: rgba(25, 25, 112, 0.8); /* Szél szín */
-    border-radius: 15px;
     position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    backdrop-filter: blur(10px);
-    margin-left: 250px;/* Üveghatás */
+    perspective: 1000px; /* Perspektívát adunk a 3D forgatáshoz */
+    margin-left: 250px; /* 50px jobbra eltolás */
 }
 
-/* Üveghatású közép */
-.box::before {
-    content: "";
+.front, .back {
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(255, 255, 255, 0.2); /* Üveghatás */
-    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(25, 25, 112, 0.8); /* Box színe */
+    border-radius: 15px;
+    backface-visibility: hidden; /* A háttér eltűnik a forgatásnál */
+    backdrop-filter: blur(10px); /* Üveghatás */
 }
 
-/* Box szöveg */
+.front {
+    z-index: 2;
+}
+
+.back {
+    transform: rotateY(180deg); /* A hátsó oldal kezdetben elforgatva */
+}
+
 .box-text {
     color: white;
     font-size: 24px;
     text-align: center;
+}
+
+.click-text {
+    color: white;
+    font-size: 11px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* A box forgatása */
+.box.flip .front {
+    transform: rotateY(180deg); /* Elforgatjuk az elülső oldalt */
+}
+
+.box.flip .back {
+    transform: rotateY(0deg); /* A hátsó oldal visszafordul */
 }
