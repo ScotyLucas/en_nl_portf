@@ -55,8 +55,8 @@ main {
 }
 
 .intro {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 500px;
     background: linear-gradient(135deg, #4f4fff, #191970);
     color: white;
     font-size: 20px;
@@ -67,5 +67,4 @@ main {
     border-radius: 15px;
     transition: transform 0.1s ease-out;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
-    position: center;
 }
