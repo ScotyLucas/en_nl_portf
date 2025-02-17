@@ -1,62 +1,41 @@
 /* Alap beállítások */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
     background-color: #191970;
     color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-/* Fejléc */
 header {
     position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
-    height: 60px;
+    height: 30px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
-    background: rgba(25, 25, 112, 0.7); /* Üveghatású háttér */
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(25, 25, 112, 0.7);
     backdrop-filter: blur(10px);
 }
 
-/* Logo */
 .logo img {
     height: 30px;
 }
 
-/* Menü */
 nav ul {
     list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 nav ul li {
     display: inline;
+    margin: 0 15px;
 }
 
-nav ul li a {
-    text-decoration: none;
+.language-switch a {
     color: white;
-    font-size: 18px;
-    padding: 10px;
-}
-
-/* Nyelvváltó */
-.language-switcher {
-    font-size: 18px;
-}
-
-.language-switcher a {
     text-decoration: none;
-    color: white;
-    margin: 0 5px;
-}
-
-/* Fő tartalom */
-main {
-    padding: 100px 20px 20px;
-    text-align: center;
 }
