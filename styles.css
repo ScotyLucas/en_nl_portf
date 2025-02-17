@@ -76,3 +76,74 @@ main {
     border-top: 2px dashed white; /* Fehér szaggatott vonal */
     margin: 40px 0; /* Távolság a bejegyzéstől */
 }
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.5s;
+    overflow: hidden;
+}
+
+.left .year {
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 24px;
+}
+
+.right .year {
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 24px;
+}
+
+.line {
+    width: 2px;
+    height: 200px;
+    background-color: white;
+}
+
+/* Box fordulás hatás */
+.box.flip {
+    transform: rotateY(180deg);
+}
+
+.box-content {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    transition: opacity 0.5s;
+}
+
+/* Szöveg megjelenítése a box flip után */
+.box.flip .box-content {
+    opacity: 1;
+}
+
+.box-content p {
+    opacity: 0;
+}
+
+/* Ha nincs fordulás, akkor a szöveg rejtve van */
+.box .box-content {
+    opacity: 0;
+}
