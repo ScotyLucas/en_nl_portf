@@ -79,20 +79,21 @@ main {
 
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-top: 50px;
+    position: relative;
 }
 
 .box {
-    width: 150px;
-    height: 150px;
+    width: 300px; /* Téglalap alakú box */
+    height: 100px;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: absolute;
     cursor: pointer;
     transition: transform 0.5s;
     overflow: hidden;
@@ -101,7 +102,7 @@ main {
 .left .year {
     position: absolute;
     top: 50%;
-    left: -30px;
+    right: -50px; /* Jobb oldalon legyen az évszám */
     transform: translateY(-50%);
     color: white;
     font-size: 24px;
@@ -110,7 +111,7 @@ main {
 .right .year {
     position: absolute;
     top: 50%;
-    right: -30px;
+    left: -50px; /* Bal oldalon legyen az évszám */
     transform: translateY(-50%);
     color: white;
     font-size: 24px;
@@ -120,6 +121,10 @@ main {
     width: 2px;
     height: 200px;
     background-color: white;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); /* A vonal középre igazítása */
 }
 
 /* Box fordulás hatás */
