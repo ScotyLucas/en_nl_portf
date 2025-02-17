@@ -55,8 +55,8 @@ main {
 }
 
 .intro {
-    width: 200px;
-    height: 500px;
+    width: 500px;
+    height: 200px;
     background: linear-gradient(135deg, #4f4fff, #191970);
     color: white;
     font-size: 20px;
@@ -67,4 +67,7 @@ main {
     border-radius: 15px;
     transition: transform 0.1s ease-out;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    margin: 70px auto 0; /* 50px header + 20px távolság */
+    position: relative;
 }
+
