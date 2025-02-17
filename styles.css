@@ -108,7 +108,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(10px); /* Üveghatás */
+    backdrop-filter: blur(10px);
+    margin-left: 50px;/* Üveghatás */
 }
 
 /* Üveghatású közép */
