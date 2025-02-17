@@ -74,5 +74,5 @@ main {
 .dashed-line {
     border: 0;
     border-top: 2px dashed white; /* Fehér szaggatott vonal */
-    margin: 20px 0; /* Távolság a bejegyzéstől */
+    margin: 40px 0; /* Távolság a bejegyzéstől */
 }
