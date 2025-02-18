@@ -80,5 +80,7 @@ main {
 .ver-line {
   border-left: 4px solid white;
   height: 500px;
-  position: center;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
 }
