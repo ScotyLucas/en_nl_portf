@@ -23,6 +23,19 @@ header {
     z-index: 5;
 }
 
+.icons {
+    display: flex; /* Ikonok egymás mellé helyezése */
+    gap: 10px; /* Ikonok közötti távolság */
+    justify-content: center; /* Középre igazítás */
+    align-items: center; /* Függőleges középre igazítás */
+    margin-top: 20px;
+}
+
+.icons img {
+    width: 50px; /* Ikon mérete */
+    height: 50px;
+}
+
 .logo img {
     height: 50px;
     width: 100px;
