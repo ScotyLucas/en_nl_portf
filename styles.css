@@ -77,3 +77,7 @@ main {
     margin: 40px 0; /* Távolság a bejegyzéstől */
 }
 
+.ver-line {
+  border-left: 6px solid green;
+  height: 500px;
+}
