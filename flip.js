@@ -1,4 +1,5 @@
-// Kattintás esemény a doboz flip hatásának indításához
-document.querySelector('.click-text').addEventListener('click', function() {
-    document.querySelector('.box').classList.toggle('flip');
-});
+cards.forEach(card => {
+  card.addEventListener('click', function() {
+    card.classList.toggle('is-flipped');
+  });
+})
