@@ -84,7 +84,9 @@ main {
   left: 50%;
   margin-left: -3px;
 }
-
+.cim {
+position: center;
+}
 .box-left {
   width: 650px;
   height: 200px;
