@@ -91,12 +91,15 @@ text-align: center;
 text-align: right;
 }
 .year2025 {
-  width: 210px;
-  height: 83px;
+  width: 80px;
+  height: 30px;
   border: 15px solid white;
   padding: 50px;
-    margin-top: 25px
+  margin-top: 25px
   margin-bottom: 25px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
   background: rgba(255, 255, 255, 0.12);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
