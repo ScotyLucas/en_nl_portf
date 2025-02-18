@@ -18,7 +18,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    margin-bottom: 30px;
     background: rgba(25, 25, 112, 0.7);
     backdrop-filter: blur(10px);
     z-index: 5;
