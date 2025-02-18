@@ -79,7 +79,7 @@ main {
 
 .ver-line {
   border-left: 4px solid white;
-  height: 500px;
+  height: 950px;
   position: absolute;
   left: 50%;
   margin-left: -3px;
@@ -109,7 +109,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   height: 200px;
   border: 15px solid white;
   padding: 50px;
-  margin-top: 10px;
+  margin-top: 30px;
   margin-left: 650px;
   background: rgba(255, 255, 255, 0.12);
 border-radius: 16px;
