@@ -80,5 +80,5 @@ main {
 .ver-line {
   border-left: 2px white;
   height: 500px;
-  position: center;
+  position: absolute;
 }
