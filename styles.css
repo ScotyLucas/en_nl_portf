@@ -78,7 +78,7 @@ main {
 }
 
 .ver-line {
-  border-left: 2px white;
+  border-left: 4px solid white;
   height: 500px;
   position: absolute;
 }
