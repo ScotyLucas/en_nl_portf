@@ -84,8 +84,11 @@ main {
   left: 50%;
   margin-left: -3px;
 }
-.project1 {
+.cim {
 text-align: center;
+}
+.project1 {
+text-align: right;
 }
 .box-left {
   width: 650px;
