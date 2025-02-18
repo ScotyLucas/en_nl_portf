@@ -23,18 +23,36 @@
      <div class="intro">
         <script src="mousemove.js"></script>
     <main>
-    <div class="icons">
+<div class="container">
+        <div class="flip-box" id="flipBox">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <div>            
+                        <div class="icons">
         <img src="images/nodejs-icon.png" alt="nodejs Icon">
         <img src="images/html5-icon.png" alt="HTML5 Icon">
         <img src="images/html-icon.png" alt="HTML Icon">
         <img src="images/css3-icon.png" alt="CSS3 Icon">
         <img src="images/java-icon.png" alt="JavaScript Icon">
     </div>
-        <h2>Junior front-end ontwikkelaar</h2>
+                <h2>Junior front-end ontwikkelaar</h2>
         <h1>Hallo, ik ben Vidiczki Máté uit Hongarije </h1>
-        <p> Dit is een meertalige portfoliopagina.</p>
+        <p> Dit is een meertalige portfoliopagina.</p></div>
+                    <div class="click-text" onclick="flipBox()">Klik hier voor meer informatie</div>
+                </div>
+                <div class="flip-box-back">
+                    <div>Itt van a további információ</div>
+                    <div class="click-text" onclick="flipBox()">Back</div>
+                </div>
+            </div>
+        </div>
+    </div>
     </main>
-     </div>
+        <script>
+        function flipBox() {
+            document.getElementById('flipBox').classList.toggle('flipped');
+        }
+    </script>
     <hr class="dashed-line">
     <div class="cim">
         <h1>Mijn ervaringen en projecten</h1>
