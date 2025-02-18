@@ -97,8 +97,7 @@ text-align: right;
   padding: 50px;
   margin-top: 25px
   margin-bottom: 25px;
-  position: absolute;
-  left: 50%;
+  position: center;
   margin-left: -3px;
   background: rgba(255, 255, 255, 0.12);
 border-radius: 16px;
