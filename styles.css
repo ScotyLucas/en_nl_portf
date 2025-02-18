@@ -78,6 +78,7 @@ main {
 }
 
 .ver-line {
-  border-left: 6px solid green;
+  border-left: 2px white;
   height: 500px;
+  position: center;
 }
