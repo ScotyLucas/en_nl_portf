@@ -181,6 +181,12 @@ main {
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
+.box-left {
+    margin-left: 100px;
+}
+.box-right {
+margin-left: 650px;
+}
 
 /* Reszponzív beállítások */
 
