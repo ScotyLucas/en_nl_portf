@@ -166,12 +166,13 @@ main {
 /* Doboztartó - hogy könnyebb legyen reszponzívvá tenni */
 .box-container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
     margin-top: 50px;
-    width: 100%;
 }
 
+/* Dobozelemek */
 .box-left, .box-right, .box-left2 {
     width: 650px;
     height: 200px;
@@ -184,23 +185,13 @@ main {
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
-
-/* Bal oldali doboz */
-.box-left {
-    margin-left: 50px; /* Fix távolság balról */
-    align-items: flex-start;
+.box-left, .box-left2 {
+    margin-top: 30px;
+    margin-left: 65px;
 }
-
-/* Jobb oldali doboz */
 .box-right {
-    margin-right: 50px; /* Fix távolság jobbról */
-    align-items: flex-end;
-}
-
-/* Újabb bal oldali doboz */
-.box-left2 {
-    margin-left: 50px;
-    align-items: flex-start;
+    margin-top: 30px;
+margin-left: 700px;
 }
 
 
