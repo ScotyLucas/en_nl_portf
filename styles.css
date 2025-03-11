@@ -157,6 +157,14 @@ main {
     margin-left: -3px;
 }
 
+.ver-line3 {
+    border-left: 4px solid white;
+    height: 1500px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+}
+
 /* Projektek cím */
 .cim {
     text-align: center;
