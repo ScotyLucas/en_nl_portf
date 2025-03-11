@@ -141,7 +141,15 @@ main {
     margin: 40px 0;
 }
 
-.ver-line {
+.ver-line1 {
+    border-left: 4px solid white;
+    height: 1500px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.ver-line2 {
     border-left: 4px solid white;
     height: 1100px;
     position: absolute;
