@@ -188,19 +188,19 @@ main {
 /* Bal oldali doboz */
 .box-left {
     margin-left: 50px; /* Fix távolság balról */
-    align-self: flex-start;
+    align-items: flex-start;
 }
 
 /* Jobb oldali doboz */
 .box-right {
     margin-right: 50px; /* Fix távolság jobbról */
-    align-self: flex-end;
+    align-items: flex-end;
 }
 
 /* Újabb bal oldali doboz */
 .box-left2 {
     margin-left: 50px;
-    align-self: flex-start;
+    align-items: flex-start;
 }
 
 
